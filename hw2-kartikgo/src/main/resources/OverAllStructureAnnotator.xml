@@ -10,33 +10,32 @@
     <delegateAnalysisEngine key="TokenAnnotator">
       <import name="TokenAnnotator"/>
     </delegateAnalysisEngine>
-  <delegateAnalysisEngine key="UniGramAnnotator">
-      <import name="UniGramAnnotator"/>
-    </delegateAnalysisEngine>
     <delegateAnalysisEngine key="BiGramAnnotator">
       <import name="BiGramAnnotator"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="UniGramAnnotator">
+      <import name="UniGramAnnotator"/>
     </delegateAnalysisEngine>
     <delegateAnalysisEngine key="TriGramAnnotator">
       <import name="TriGramAnnotator"/>
     </delegateAnalysisEngine>
   </delegateAnalysisEngineSpecifiers>
   <analysisEngineMetaData>
-    <name>OverAllStructure</name>
+    <name>OverAllStructureAnnotator</name>
     <description/>
     <version>1.0</version>
     <vendor/>
-    <configurationParameters searchStrategy="language_fallback"/>
+    <configurationParameters/>
     <configurationParameterSettings/>
     <flowConstraints>
       <fixedFlow>
         <node>TestElementAnnotator</node>
         <node>TokenAnnotator</node>
-      <node>UniGramAnnotator</node>
         <node>BiGramAnnotator</node>
+        <node>UniGramAnnotator</node>
         <node>TriGramAnnotator</node>
       </fixedFlow>
     </flowConstraints>
-    <typePriorities/>
     <fsIndexCollection/>
     <capabilities>
       <capability>
@@ -44,8 +43,8 @@
         <outputs>
           <type allAnnotatorFeatures="true">edu.cmu.deiis.types.Token</type>
           <type allAnnotatorFeatures="true">edu.cmu.deiis.types.Question</type>
+          <type allAnnotatorFeatures="true">edu.cmu.deiis.types.NGram</type>
           <type allAnnotatorFeatures="true">edu.cmu.deiis.types.Answer</type>
-        <type allAnnotatorFeatures="true">edu.cmu.deiis.types.NGram</type>
         </outputs>
         <languagesSupported/>
       </capability>
