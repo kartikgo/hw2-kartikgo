@@ -5,7 +5,7 @@
   <primitive>true</primitive>  <annotatorImplementationName>edu.cmu.deiis.annotator.BiGramAnnotator</annotatorImplementationName>
   <analysisEngineMetaData>
     <name>BiGramAnnotator</name>
-    <description/>
+    <description>This engine outputs Ngram objects which are bi-grams in text. It takes Token input. </description>
     <version>1.0</version>
     <vendor/>
     <configurationParameters/>

@@ -16,7 +16,17 @@ import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.resource.ResourceInitializationException;
 import org.apache.uima.util.Level;
 
+/**
+ * 
+ * Class to annotate bigrams of type Ngram.
+ * 
+ * 
+ * @author Kartik Goyal
+ */
 public class BiGramAnnotator extends JCasAnnotator_ImplBase{
+  /**
+   * It uses casProcessorId of tokens to form relevant bigrams
+   */
   public void process(JCas jCas) throws AnalysisEngineProcessException {
 
     FSIndex tokIdx = jCas.getAnnotationIndex(Token.type);

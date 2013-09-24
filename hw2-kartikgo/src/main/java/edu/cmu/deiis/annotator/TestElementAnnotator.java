@@ -16,6 +16,7 @@ import org.apache.uima.util.Level;
 
 /**
  * Annotator to annotate questions and answers
+ * @author Kartik Goyal
  */
 
 public class TestElementAnnotator extends JCasAnnotator_ImplBase {

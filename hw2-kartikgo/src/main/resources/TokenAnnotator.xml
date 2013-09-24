@@ -5,7 +5,7 @@
   <primitive>true</primitive>  <annotatorImplementationName>edu.cmu.deiis.annotator.TokenAnnotator</annotatorImplementationName>
   <analysisEngineMetaData>
     <name>TokenAnnotator</name>
-    <description/>
+    <description>This engine annotate all the tokens in the text. The tokens have been enhanced to contain lemma and part of speech information too.</description>
     <version>1.0</version>
     <vendor/>
     <configurationParameters/>

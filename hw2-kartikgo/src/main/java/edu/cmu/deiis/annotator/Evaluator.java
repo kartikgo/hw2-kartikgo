@@ -21,16 +21,26 @@ import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.resource.ResourceInitializationException;
 
 import edu.cmu.deiis.types.*;
-
+/**
+ * The final class that sorts the answers based on their score
+ * @author Kartik Goyal
+ *
+ */
 public class Evaluator extends JCasAnnotator_ImplBase {
   private Integer id;
   private ArrayList<Double> preclist;
+  /**
+   * Global list for average precision
+   */
   public void initialize(UimaContext aContext) throws ResourceInitializationException {
     super.initialize(aContext);
     // Get config. parameter values
     id = 0;
     preclist= new ArrayList<Double>();
   }
+  /**
+   * Calculating average precision
+   */
   public void destroy(){
     super.destroy();
     Double tot=0.0;
@@ -40,6 +50,9 @@ public class Evaluator extends JCasAnnotator_ImplBase {
     Double avg_prec= tot/id.doubleValue();
     System.out.println("Average Precision: "+avg_prec.toString());
   }
+  /**
+   * sort the answers
+   */
   public void process(JCas jCas) throws AnalysisEngineProcessException {
     id +=1;
     FSIndex scoreIdx = jCas.getAnnotationIndex(AnswerScore.type);

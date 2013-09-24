@@ -20,7 +20,12 @@ import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.resource.ResourceInitializationException;
 
 import edu.cmu.deiis.types.*;
-
+/**
+ * This calculates overlaps of tokens, ngrams, part of speech tags(both tokens and ngrams), lemma(bith tokens and ngrams) 
+ * Finally a score which is a weighted sum of these attributes is calculated.
+ * @author Kartik Goyal
+ *
+ */
 public class ScoreAnnotator extends JCasAnnotator_ImplBase {
   
   public void process(JCas jCas) throws AnalysisEngineProcessException {

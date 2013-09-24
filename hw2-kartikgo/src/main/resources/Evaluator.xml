@@ -5,7 +5,7 @@
   <primitive>true</primitive>  <annotatorImplementationName>edu.cmu.deiis.annotator.Evaluator</annotatorImplementationName>
   <analysisEngineMetaData>
     <name>Evaluator</name>
-    <description/>
+    <description>This Engine is responsible for sorting the answers and computing precision. It takes input AnswerScore objects and Question Object.</description>
     <version>1.0</version>
     <vendor/>
     <configurationParameters/>

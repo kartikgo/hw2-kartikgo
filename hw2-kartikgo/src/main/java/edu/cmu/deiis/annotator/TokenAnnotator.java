@@ -49,6 +49,7 @@ import edu.cmu.deiis.types.*;
  * 
  * Class to annotate tokens and relevant information.
  * 
+ * Token Enhanced to have part of speech and lemma information
  * 
  * 
  * @author Kartik Goyal

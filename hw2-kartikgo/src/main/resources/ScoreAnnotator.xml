@@ -5,7 +5,7 @@
   <primitive>true</primitive>  <annotatorImplementationName>edu.cmu.deiis.annotator.ScoreAnnotator</annotatorImplementationName>
   <analysisEngineMetaData>
     <name>ScoreAnnotator</name>
-    <description/>
+    <description>This engine is responsible for computing token, ngram, pos tags, ngram pos tags, lemma, ngram lemma overlaps. Then it combines these scores with token surface forms having highest weight, then lemma, then pos tags. It outputs/annotates AnswerScore objects</description>
     <version>1.0</version>
     <vendor/>
     <configurationParameters/>

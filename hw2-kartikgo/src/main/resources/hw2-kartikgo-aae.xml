@@ -28,7 +28,7 @@
   </delegateAnalysisEngineSpecifiers>
   <analysisEngineMetaData>
     <name>OverAllStructureAnnotator</name>
-    <description/>
+    <description>The main engine which aggregates all the other engines and runs them in a desired flow order. Check Aggrgate flow order for information about engine sequence</description>
     <version>1.0</version>
     <vendor/>
     <configurationParameters searchStrategy="language_fallback"/>

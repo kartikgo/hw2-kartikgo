@@ -5,7 +5,7 @@
   <primitive>true</primitive>  <annotatorImplementationName>edu.cmu.deiis.annotator.TestElementAnnotator</annotatorImplementationName>
   <analysisEngineMetaData>
     <name>TestElementAnnotator</name>
-    <description>Annotates the Quesitons and Answers.</description>
+    <description>Annotates the Questions and Answers.</description>
     <version>1.0</version>
     <vendor/>
     <configurationParameters searchStrategy="language_fallback">

@@ -16,7 +16,17 @@ import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.resource.ResourceInitializationException;
 import org.apache.uima.util.Level;
 
+/**
+ * 
+ * Class to annotate unigrams of type Ngram.
+ * 
+ * 
+ * @author Kartik Goyal
+ */
 public class UnigramAnnotator extends JCasAnnotator_ImplBase {
+  /**
+   * It uses casProcessorId of tokens to form relevant unigrams
+   */
   public void process(JCas jCas) throws AnalysisEngineProcessException {
 
     FSIndex tokIdx = jCas.getAnnotationIndex(Token.type);
