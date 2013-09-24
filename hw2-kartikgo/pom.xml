@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>edu.cmu.lti.11791.f13.hw2</groupId>
 	<artifactId>hw2-kartikgo</artifactId>
-	<version>0.0.5</version>
+	<version>0.0.6-SNAPSHOT</version>
 	<repositories>
 		<repository>
 			<id>oaqa</id>
@@ -116,7 +116,7 @@
 		</dependency>
 	</dependencies>
 	<scm>
-		<connection>scm:git:git@github.com:kartikgo/kartikgo-hw2.git</connection>
-		<developerConnection>scm:git:git@github.com:kartikgo/kartikgo-hw2.git</developerConnection>
+		<connection>scm:git:git@github.com:kartikgo/hw2-kartikgo.git</connection>
+		<developerConnection>scm:git:git@github.com:kartikgo/hw2-kartikgo.git</developerConnection>
 	</scm>
 </project>
