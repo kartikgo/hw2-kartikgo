@@ -19,13 +19,19 @@
     <delegateAnalysisEngine key="TriGramAnnotator">
       <import name="TriGramAnnotator"/>
     </delegateAnalysisEngine>
+  <delegateAnalysisEngine key="ScoreAnnotator">
+      <import name="ScoreAnnotator"/>
+    </delegateAnalysisEngine>
+  <delegateAnalysisEngine key="Evaluator">
+      <import name="Evaluator"/>
+    </delegateAnalysisEngine>
   </delegateAnalysisEngineSpecifiers>
   <analysisEngineMetaData>
     <name>OverAllStructureAnnotator</name>
     <description/>
     <version>1.0</version>
     <vendor/>
-    <configurationParameters/>
+    <configurationParameters searchStrategy="language_fallback"/>
     <configurationParameterSettings/>
     <flowConstraints>
       <fixedFlow>
@@ -34,6 +40,8 @@
         <node>BiGramAnnotator</node>
         <node>UniGramAnnotator</node>
         <node>TriGramAnnotator</node>
+      <node>ScoreAnnotator</node>
+      <node>Evaluator</node>
       </fixedFlow>
     </flowConstraints>
     <fsIndexCollection/>
@@ -45,6 +53,7 @@
           <type allAnnotatorFeatures="true">edu.cmu.deiis.types.Question</type>
           <type allAnnotatorFeatures="true">edu.cmu.deiis.types.NGram</type>
           <type allAnnotatorFeatures="true">edu.cmu.deiis.types.Answer</type>
+        <type allAnnotatorFeatures="true">edu.cmu.deiis.types.AnswerScore</type>
         </outputs>
         <languagesSupported/>
       </capability>
